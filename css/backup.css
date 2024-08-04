@@ -1,12 +1,17 @@
 html {
     min-height: 100vh;
 }
-
 body {
     background: linear-gradient(to bottom, #E55A00, #C5A4B9, #E55A00);
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
+.hero {
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .imGrecia {
     color: white;
     font-size: 70px;
@@ -16,7 +21,6 @@ body {
     margin-bottom: 1px;
     text-align: center;
 }
-
 #par2 {
     color: white;
     font-size: 25px;
@@ -27,7 +31,6 @@ body {
     text-align: center;
 
 }
-
 #par3 {
     color: white;
     font-size: 30px;
@@ -37,7 +40,6 @@ body {
 
     text-align: center;
 }
-
 .nav {
     border: 2px;
     border-style: solid;
@@ -45,12 +47,11 @@ body {
     border-radius: 15px;
     position: fixed;
     display: flex;
-    margin-left: 65px;
+    margin-left: 75px;
     margin-top: 20px;
     z-index: 50;
-    background: rgba(122, 120, 120, 0.2);
+    background: rgba(122, 120, 120, 0.5);
 }
-
 .nav a {
     font-size: 32px;
     font-family: "Playfair Display";
@@ -60,7 +61,6 @@ body {
     text-align: center;
     text-decoration: none;
 }
-
 .nav a:hover {
     text-decoration: underline;
 }
@@ -73,13 +73,6 @@ body {
 .nav i:hover {
     color: rgb(183, 154, 197);
 }
-
-.hero {
-    display: flex;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .btn {
     background-color: transparent;
     color: white;
@@ -110,26 +103,22 @@ body {
     margin-right: 0;
     margin-left: 30px;
 }
-
 .heroText {
     align-content: center;
     margin-bottom: 120px;
     margin-right: 50px;
 }
-
 .aboutg {
     position: relative;
     padding: 100px;
-    width: 1000px;
+    width: 1280px;
     height: 500px;
 }
-
 .overlayg {
     position: absolute;
-    width: 100px;
+    width: 500px;
     height: 100px;
 }
-
 .overlay1g {
     font-family: "Syne";
     font-size: 30px;
@@ -145,11 +134,7 @@ body {
     z-index: 20;
     left: -37px;
 }
-
 .overlay2g {
-
-    left: 50px;
-    z-index: 20;
     font-size: 25px;
     font-family: "IBM Plex Mono";
     color: white;
@@ -162,184 +147,369 @@ body {
     top: 35px;
     left: 120px;
     z-index: 10;
+    width: 800px;
+    height: 500px;
 }
-
 .overlay3g {
     position: absolute;
     left: 800px;
     z-index: 20;
-    top: 85px;
+    top: 90px;
     border-radius: 500px;
-    height: 350px;
-    width: 275px;
+    height: 390px;
+    width: 285px;
 }
-
 .skills {
     position: relative;
     padding: 100px;
-    width: 1070px;
+    width: 1080px;
     height: 800px;
 }
-
 .skillsHeader {
     font-size: 80px;
     font-family: "Playfair Display";
     color: white;
     position: absolute;
-    top: -45px;
-    left: -12px;
+    top: 280px;
+    left: 100px;
     z-index: 30;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
-
 .skill {
     font-size: 40px;
     font-family: 'Syne';
     color: white;
     padding: 20px
 }
-
 .ulskills {
-    font-size: 19px;
+    font-size: 20px;
     font-family: 'IBM Plex Mono';
     color: white;
 }
 
 .skill1 {
     position: absolute;
-    top: 190px;
-    left: 95px;
+    top: 420px;
+    left: 89px;
+    text-align: center;
     z-index: 30;
 }
 
 .skill2 {
     position: absolute;
-    top: 190px;
-    right: 719px;
+    top: 420px;
+    right: 515px;
     z-index: 30;
 }
 
 .skill3 {
     position: absolute;
-    top: 190px;
-    right: 403px;
+    top: 420px;
+    right: 198px;
     z-index: 30;
 }
 
 .skill4 {
     position: absolute;
-    top: 190px;
-    right: 151px;
+    top: 420px;
+    right: -60px;
+    text-align: center;
     z-index: 30;
 }
-
 .skills1 {
-    border-style: solid;
     border-radius: 30px;
     border-color: white;
-    height: 70px;
-    width: 150px;
-    height: 350px;
+    width: 275px;
+    height: 555px;
     padding: 50px;
     position: absolute;
-    top: 280px;
-    left: 70px;
+    top: 510px;
+    left: 50px;
     background: rgba(0, 0, 0, 0.2);
     z-index: 30;
 }
 
 .skills2 {
-    border-style: solid;
     border-radius: 30px;
     border-color: white;
-    height: 70px;
-    width: 150px;
-    height: 350px;
+    width: 275px;
+    height: 555px;
     padding: 50px;
     position: absolute;
-    top: 280px;
-    left: 365px;
+    top: 510px;
+    left: 355px;
     background: rgba(0, 0, 0, 0.2);
     z-index: 30;
 }
 
 .skills3 {
-    border-style: solid;
     border-radius: 30px;
     border-color: white;
-    height: 70px;
-    width: 150px;
-    height: 350px;
+    width: 275px;
+    height: 555px;
     padding: 50px;
     position: absolute;
-    top: 280px;
+    top: 510px;
     left: 660px;
     background: rgba(0, 0, 0, 0.2);
     z-index: 30;
 }
 
 .skills4 {
-    border-style: solid;
     border-radius: 30px;
     border-color: white;
     height: 70px;
-    width: 150px;
-    height: 350px;
+    width: 270px;
+    height: 555px;
     padding: 50px;
     position: absolute;
-    top: 280px;
-    left: 950px;
+    top: 510px;
+    left: 965px;
     background: rgba(0, 0, 0, 0.2);
     z-index: 30;
 }
-
 .circles {
     position: relative;
 }
 
 .circle1 {
-    width: 123px;
-    height: 123px;
+    width: 600px;
+    height: 277px;
     position: absolute;
-    top: -310px;
-    left: 324px;
+    top: 70px;
+    left: -257px;
 }
-
 .circle2 {
     position: absolute;
-    top: -179px;
+    top: -77px;
     left: -162px;
-    width: 213px;
+    width: 134px;
     z-index: 10;
     transform: rotate(180deg);
 }
-
 .circle3 {
     position: absolute;
     width: 70px;
     left: 235px;
-    top: -100px;
+    top: 147px;
 }
-
-.circle5 {
-    position: absolute;
-    bottom: -605px;
-    right: -78px;
-    width: 179px;
-    transform: rotate(245deg);
-}
-
 .circle4 {
     position: absolute;
-    left: 200px;
-    bottom: -490px;
-    width: 400px;
+    left: 887px;
+    bottom: -1072px;
+    width: 268px;
 }
-
+.circle5 {
+    position: absolute;
+    bottom: -773px;
+    right: -286px;
+    width: 69px;
+    transform: rotate(245deg);
+}
 .circle7 {
     position: absolute;
-    bottom: -231px;
-    right: -93px;
-    width: 75px;
+    bottom: -960px;
+    right: 115px;
+    width: 35px;
     transform: rotate(160deg);
+}
+.proj {
+    position: relative;
+    padding: 100px;
+    width: 1200px;
+    height: 800px;
+    left: 2.5rem;
+    top: 29rem;
+    color: white;
+}
+.selected {
+    font-family: "Playfair Display";
+    font-size: 7rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: -8rem;
+    left: 19rem;
+}
+.proj2 {
+    font-size: 5rem;
+    font-family: syne;
+    font-weight: 500;
+    position: absolute;
+    bottom: 45rem;
+    left: 34rem;
+}
+.carousel-caption d-none d-md-block {
+    font-family: "Playfair Display" !important;
+    background: rgba(0, 0, 0, 0.7);
+    width: 59rem !important;
+    height: 11rem !important;
+    left: 2rem;
+    height: 11rem;
+    bottom: 55px;
+}
+.seemorebtn {
+    background: rgba(0, 0, 0, 0.7);
+    font-family: "syne";
+    font-size: 24px;
+    color: orange;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 15px;
+    position: absolute;
+    left: 42rem;
+    width: 155px;
+    height: 67;
+    z-index: 10;
+    top: 7rem;
+}
+
+h5{
+    font-size: 23px;
+    font-family: 'Syne';
+    background: rgba(0, 0, 0, 0.7);
+}
+.footer{
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0; 
+    width: -webkit-fill-available;
+    position: absolute;
+    top: 253rem;
+    font-size: 25px;
+    font-family: syne;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.connect{
+    width: 20rem;
+    height: 30rem;
+    position: relative;
+    top: -3rem;
+}
+#connect {
+    font-size: 5rem;
+    font-family: Playfair Display;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 10;
+    bottom: -16rem;
+    left: 26rem;
+    width: 30rem;
+
+}
+.btns{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'IBM Plex Mono';
+    position: absolute;
+    bottom: -26rem;
+    left: 3rem;
+    z-index: 20;
+}
+.btn1 {
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    width: 25rem;
+    height: 10rem;
+    border: white;
+    border-radius: 30px;
+    border-style: groove;
+    position: absolute;
+    left: 11rem;
+    top: -7rem;
+    margin-left: -13px;
+}
+.btn2 {
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    width: 25rem;
+    height: 10rem;
+    border: white;
+    border-radius: 30px;
+    border-style: groove;
+    position: absolute;
+    left: 11rem;
+    top: 4rem;
+    margin-left: -11px;
+}
+.btn3 {
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    width: 25rem;
+    height: 10rem;
+    border: white;
+    border-radius: 30px;
+    border-style: groove;
+    position: absolute;
+    left: 39rem;
+    top: -7rem;
+}
+.btn4 {
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    width: 25rem;
+    height: 10rem;
+    border: white;
+    border-radius: 30px;
+    border-style: groove;
+    position: absolute;
+    left: 39rem;
+    top: 4rem;
+}
+.btns i{
+    padding: 2rem;
+}
+.cirC {
+    position: relative;
+}
+.cC1{
+    width: 15rem;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 29rem;
+    right: -55rem;
+}
+.cC2{
+    width: 6rem;
+    transform: rotate(95deg);
+    position: absolute;
+    top: 33rem;
+    right: -36rem;
+}
+.cC3{
+    width: 6rem;
+    transform: rotate(95deg);
+    position: absolute;
+    top: 33rem;
+    right: -36rem;
+}
+.cC4{
+    width: 2rem;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 48rem;
+    right: -53rem;
+}
+.cC5 {
+    width: 22rem;
+    transform: rotate(210deg);
+    position: absolute;
+    top: 62rem;
+    right: -40rem;
+}
+.cC6 {
+    width: 2rem;
+    transform: rotate(185deg);
+    position: absolute;
+    top: 38rem;
+    right: -5rem;
 }

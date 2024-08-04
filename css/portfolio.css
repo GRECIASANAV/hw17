@@ -108,16 +108,14 @@ body {
     margin-right: 50px;
 }
 .aboutg {
-    display: flex;
+    position: relative;
     padding: 100px;
     width: 1280px;
     height: 500px;
-}
-.overlayg {
     display: flex;
-    width: 500px;
-    height: 100px;
+    margin-left: 14rem;
 }
+
 .overlay1g {
     font-family: "Syne";
     font-size: 30px;
@@ -129,8 +127,12 @@ body {
     border-radius: 20px;
     background: white;
     width: 350px;
-    z-index: 20;
-    display: flex;
+    position: absolute;
+    left: -5rem;
+    top: 117px;
+    z-index: 30;
+   
+    
 }
 .overlay2g {
     font-size: 25px;
@@ -141,7 +143,8 @@ body {
     width: 600px;
     padding: 50px;
     padding-right: 200px;
-    display: flex;
+    position: absolute;
+    top: 10rem;
     z-index: 10;
     width: 800px;
     height: 500px;
@@ -150,70 +153,49 @@ body {
     display: flex;
     left: 800px;
     z-index: 20;
-    top: 90px;
+    position: absolute;
+    top: 13rem;
     border-radius: 500px;
     height: 390px;
     width: 285px;
 }
 .skills {
     display: flex;
+    margin-left: 14rem;
+    position: relative;
     padding: 100px;
-    width: 1080px;
-    height: 800px;
+    width: 1280px;
+    height: 500px;
+    margin-top: 31rem;
+}
+.grid-containerskills {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 100px 300px;
+    grid-gap: 30px;
+    padding: 10px;
 }
 .skillsHeader {
     font-size: 80px;
     font-family: "Playfair Display";
     color: white;
-    display: flex;
-    z-index: 30;
+    position: absolute;
+    z-index: 10;
+    top: -7rem;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
-.skill {
+.item1, .item2, .item3, .item4 {
     font-size: 40px;
     font-family: 'Syne';
     color: white;
-    padding: 20px
+    padding: 20px;
+    text-align: center;
 }
-.ulskills {
+
+ul#list {
     font-size: 20px;
     font-family: 'IBM Plex Mono';
     color: white;
-}
-
-.skill1 {
-    display: flex;
-    text-align: center;
-    z-index: 30;
-}
-
-.skill2 {
-    
-    z-index: 30;
-}
-
-.skill3 {
-    
-    z-index: 30;
-}
-
-.skill4 {
-    
-    text-align: center;
-    z-index: 30;
-}
-.skills1 {
-    border-radius: 30px;
-    border-color: white;
-    width: 275px;
-    height: 555px;
-    padding: 50px;
-    
-    background: rgba(0, 0, 0, 0.2);
-    z-index: 30;
-}
-
-.skills2 {
     border-radius: 30px;
     border-color: white;
     width: 275px;
@@ -223,29 +205,6 @@ body {
     z-index: 30;
 }
 
-.skills3 {
-    border-radius: 30px;
-    border-color: white;
-    width: 275px;
-    height: 555px;
-    padding: 50px;
-    background: rgba(0, 0, 0, 0.2);
-    z-index: 30;
-}
-
-.skills4 {
-    border-radius: 30px;
-    border-color: white;
-    height: 70px;
-    width: 270px;
-    height: 555px;
-    padding: 50px;
-    background: rgba(0, 0, 0, 0.2);
-    z-index: 30;
-}
-.circles {
-    position: relative;
-}
 
 .circle1 {
     width: 600px;
@@ -259,7 +218,7 @@ body {
     top: -77px;
     left: -162px;
     width: 134px;
-    z-index: 10;
+   
     transform: rotate(180deg);
 }
 .circle3 {
@@ -290,18 +249,18 @@ body {
 }
 .proj {
     position: relative;
+    margin-top: 31rem;
     padding: 100px;
     width: 1200px;
     height: 800px;
     left: 2.5rem;
-    top: 29rem;
     color: white;
 }
 .selected {
     font-family: "Playfair Display";
     font-size: 7rem;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    position: absolute;
+    
     top: -8rem;
     left: 19rem;
 }
@@ -309,7 +268,6 @@ body {
     font-size: 5rem;
     font-family: syne;
     font-weight: 500;
-    position: absolute;
     bottom: 45rem;
     left: 34rem;
 }
@@ -347,10 +305,11 @@ h5{
     color: #fff;
     padding: 40px 0; 
     width: -webkit-fill-available;
-    
     font-size: 25px;
     font-family: syne;
     background: rgba(0, 0, 0, 0.2);
+    position: relative;
+    bottom: -17rem;
 }
 
 .footer-container {
@@ -360,11 +319,24 @@ h5{
     margin: 0 auto;
     padding: 0 20px;
 }
-.connect{
-    width: 20rem;
-    height: 30rem;
+.connect {
+    margin-left: 14rem;
     position: relative;
-    top: -3rem;
+    padding: 100px;
+    width: 1280px;
+    height: 500px;
+    margin-top: 31rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0rem;
+}
+.grid-containerconn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 50px;
+    padding: 110px;
 }
 #connect {
     font-size: 5rem;
@@ -373,20 +345,15 @@ h5{
     color: white;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     
-    z-index: 10;
-    bottom: -16rem;
-    
     width: 30rem;
 
 }
-.btns{
+.btn1, .btn2, .btn3, .btn4{
     text-align: center;
     font-size: 50px;
     font-family: 'IBM Plex Mono';
-    
-    z-index: 20;
-}
-.btn1 {
+    align-items: center;
+    justify-content: center;
     color: white;
     background: rgba(0, 0, 0, 0.7);
     width: 25rem;
@@ -394,39 +361,9 @@ h5{
     border: white;
     border-radius: 30px;
     border-style: groove;
-   
 }
-.btn2 {
-    color: white;
-    background: rgba(0, 0, 0, 0.7);
-    width: 25rem;
-    height: 10rem;
-    border: white;
-    border-radius: 30px;
-    border-style: groove;
-    
-}
-.btn3 {
-    color: white;
-    background: rgba(0, 0, 0, 0.7);
-    width: 25rem;
-    height: 10rem;
-    border: white;
-    border-radius: 30px;
-    border-style: groove;
-    
-}
-.btn4 {
-    color: white;
-    background: rgba(0, 0, 0, 0.7);
-    width: 25rem;
-    height: 10rem;
-    border: white;
-    border-radius: 30px;
-    border-style: groove;
-    
-}
-.btns i{
+
+.btn1 i, .btn2 i, .btn3 i, .btn4 i {
     padding: 2rem;
 }
 .cirC {
