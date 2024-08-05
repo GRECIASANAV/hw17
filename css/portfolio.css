@@ -90,6 +90,7 @@ body {
 
 .btn:hover {
     background-color: rgb(183, 154, 197);
+    color: white;
 }
 
 .herobtn {
@@ -140,14 +141,11 @@ body {
     color: white;
     border-style: solid;
     border-color: white;
-    width: 600px;
     padding: 50px;
     padding-right: 200px;
-    position: absolute;
-    top: 10rem;
-    z-index: 10;
     width: 800px;
     height: 500px;
+    margin-top: 4rem;
 }
 .overlay3g {
     display: flex;
@@ -160,13 +158,11 @@ body {
     width: 285px;
 }
 .skills {
-    display: flex;
-    margin-left: 14rem;
     position: relative;
     padding: 100px;
+    bottom: 10rem;
     width: 1280px;
-    height: 500px;
-    margin-top: 31rem;
+    margin-top: 38rem;
 }
 .grid-containerskills {
     display: grid;
@@ -174,14 +170,17 @@ body {
     grid-template-rows: 100px 300px;
     grid-gap: 30px;
     padding: 10px;
+    position: relative;
+    z-index: 10;
 }
+
 .skillsHeader {
     font-size: 80px;
     font-family: "Playfair Display";
     color: white;
     position: absolute;
     z-index: 10;
-    top: -7rem;
+    top: -1rem;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 .item1, .item2, .item3, .item4 {
@@ -210,66 +209,64 @@ ul#list {
     width: 600px;
     height: 277px;
     position: absolute;
-    top: 70px;
-    left: -257px;
+    top: -6rem;
+    left: -14rem;
 }
 .circle2 {
     position: absolute;
-    top: -77px;
-    left: -162px;
-    width: 134px;
-   
+    top: 8rem;
+    left: 18rem;
+    width: 87px;
     transform: rotate(180deg);
 }
 .circle3 {
     position: absolute;
-    width: 70px;
-    left: 235px;
-    top: 147px;
+    width: 5rem;
+    left: -5rem;
+    top: -14rem;
 }
 .circle4 {
     position: absolute;
-    left: 887px;
-    bottom: -1072px;
+    right: 7rem;
+    bottom: -5rem;
     width: 268px;
 }
 .circle5 {
     position: absolute;
-    bottom: -773px;
-    right: -286px;
+    bottom: -8rem;
+    right: 30rem;
     width: 69px;
     transform: rotate(245deg);
 }
 .circle7 {
     position: absolute;
-    bottom: -960px;
-    right: 115px;
+    bottom: 5rem;
+    right: -6rem;
     width: 35px;
     transform: rotate(160deg);
 }
 .proj {
-    position: relative;
-    margin-top: 31rem;
-    padding: 100px;
-    width: 1200px;
-    height: 800px;
-    left: 2.5rem;
-    color: white;
+  margin-top: 10rem;
+  width: 1200px;
+  left: 2.5rem;
+  color: white;
 }
 .selected {
-    font-family: "Playfair Display";
-    font-size: 7rem;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    
-    top: -8rem;
-    left: 19rem;
+    font-size: 5rem;
+    font-family: "syne";
+    font-weight: 500;
+    bottom: 3rem;
+    left: 21rem;
+    position: relative;
 }
+
 .proj2 {
     font-size: 5rem;
     font-family: syne;
     font-weight: 500;
-    bottom: 45rem;
+    bottom: 4rem;
     left: 34rem;
+    position: relative;
 }
 .carousel-caption d-none d-md-block {
     font-family: "Playfair Display" !important;
@@ -301,35 +298,29 @@ h5{
     background: rgba(0, 0, 0, 0.7);
 }
 .footer{
-    background-color: #333;
     color: #fff;
-    padding: 40px 0; 
+    padding: 40px ; 
     width: -webkit-fill-available;
     font-size: 25px;
     font-family: syne;
     background: rgba(0, 0, 0, 0.2);
-    position: relative;
-    bottom: -17rem;
+    
 }
 
 .footer-container {
-    display: flex;
-    justify-content: space-between;
     max-width: 1200px;
-    margin: 0 auto;
+    
     padding: 0 20px;
 }
+
 .connect {
-    margin-left: 14rem;
+    font-size: 5rem;
+    font-family: Playfair Display;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     position: relative;
-    padding: 100px;
-    width: 1280px;
-    height: 500px;
-    margin-top: 31rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 0rem;
+    z-index: 10;
 }
 .grid-containerconn {
     display: grid;
@@ -337,6 +328,8 @@ h5{
     grid-template-rows: 1fr 1fr;
     grid-gap: 50px;
     padding: 110px;
+    position: relative;
+    z-index: 10;
 }
 #connect {
     font-size: 5rem;
@@ -344,9 +337,9 @@ h5{
     text-align: center;
     color: white;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    
-    width: 30rem;
-
+    margin-top: 10rem;
+    position: relative;
+    z-index: 10;
 }
 .btn1, .btn2, .btn3, .btn4{
     text-align: center;
@@ -366,49 +359,50 @@ h5{
 .btn1 i, .btn2 i, .btn3 i, .btn4 i {
     padding: 2rem;
 }
-.cirC {
-    position: relative;
-}
+
 .cC1{
     width: 15rem;
     transform: rotate(45deg);
     position: absolute;
-    top: 29rem;
-    right: -55rem;
+    bottom: 36rem;
+    right: 1rem;
 }
-.cC2{
+
+.cC2 {
     width: 6rem;
     transform: rotate(95deg);
     position: absolute;
-    top: 33rem;
-    right: -36rem;
+    bottom: 36rem;
+    right: 18rem;
 }
 .cC3{
-    width: 6rem;
+    width: 3rem;
     transform: rotate(95deg);
     position: absolute;
-    top: 33rem;
-    right: -36rem;
+    bottom: 43rem;
+    right: 51rem;
 }
 .cC4{
-    width: 2rem;
+    width: 9rem;
     transform: rotate(45deg);
     position: absolute;
-    top: 48rem;
-    right: -53rem;
+    bottom: 18rem;
+    right: 33rem;
 }
+
 .cC5 {
     width: 22rem;
     transform: rotate(210deg);
     position: absolute;
-    top: 62rem;
-    right: -40rem;
+    bottom: 0rem;
+    right: 52rem;
 }
 .cC6 {
     width: 2rem;
     transform: rotate(185deg);
     position: absolute;
-    top: 38rem;
-    right: -5rem;
+    bottom: 5rem;
+    right: 1rem;
 }
+
 
